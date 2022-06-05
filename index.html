@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+  <div class="weather_forecast">
+    <div class="container">
+      <div class="row" class="city">
+        <div class="col-sm"><a href="#">Lisbon</a></div>
+        <div class="col-sm"><a href="#">Paris</a></div>
+        <div class="col-sm"><a href="#">Sydney</a></div>
+        <div class="col-sm"><a href="#">San Francisco</a></div>
+      </div>
+    </div>
+    <form class="search_city">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-8">
+            <input type="text" class="form-control" placeholder="Enter a city" />
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-primary" id="citySearch">Search</button>
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-success" id="cityCurrent">Current</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="current_city">
+      <div class="container">
+        <div class="row">
+          <h3 id="curentCity">Lisbon</h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h3 id="curentDate">Saturday 21:46</h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h3>Clouds ☁ <span id="temperature">17</span>°C </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="day">
+            <h4>
+              Sun <br />
+              🌦<br />
+              18°
+            </h4>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="day">
+            <h4>
+              Mon <br />
+              🌤<br />
+              29°
+            </h4>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="day">
+            <h4>
+              Tue <br />
+              🌩<br />
+              25°
+            </h4>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="day">
+            <h4>
+              Wed <br />
+              ⛈<br />
+              24°
+            </h4>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="day">
+            <h4>
+              Thu <br />
+              ☀<br />
+              25°
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
