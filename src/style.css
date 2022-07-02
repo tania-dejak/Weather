@@ -3,7 +3,18 @@ body {
   width: 80%;
   margin: 30px 50px;
 }
-
+.weather_forecast {
+  background: #ccc;
+}
+ul {
+  padding-inline-start: 0px;
+}
+ul li {
+  list-style-type: none;
+}
+#description {
+  text-transform: capitalize;
+}
 .weather_forecast {
   position: relative;
   opacity: 0.99;
@@ -12,7 +23,7 @@ body {
   padding: 30px;
 }
 
-.weather_forecast::before {
+/* .weather_forecast::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -24,9 +35,12 @@ body {
   opacity: 0.2;
   top: 0;
   left: 0;
+} */
+.form-control {
+  border: none;
 }
 a {
-  font-size: 20px;
+  transition: ease-in-out 1s;
 }
 a:hover {
   text-decoration: none;
@@ -35,7 +49,25 @@ a:hover {
 .search_city {
   margin: 30px 0;
 }
+.search_city input,
+button {
+  margin-bottom: 20px;
+}
 .current_city {
   color: rgb(0, 0, 0);
   margin: 20px 0;
+}
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+.footer {
+  text-align: center;
+}
+.footer a {
+  font-size: 1rem;
 }

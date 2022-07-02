@@ -8,30 +8,30 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <title>Weather</title>
+  <title>Weather week 7</title>
   <link rel="stylesheet" href="src/style.css" />
 </head>
 
 <body>
   <div class="weather_forecast">
-    <div class="container">
+    <!-- <div class="container">
       <div class="row" class="city">
         <div class="col-sm"><a href="#">Lisbon</a></div>
         <div class="col-sm"><a href="#">Paris</a></div>
         <div class="col-sm"><a href="#">Sydney</a></div>
         <div class="col-sm"><a href="#">San Francisco</a></div>
       </div>
-    </div>
-    <form class="search_city">
+    </div> -->
+    <form id="search-form" class="search_city">
       <div class="form-group">
         <div class="row">
-          <div class="col-8">
-            <input type="text" class="form-control" placeholder="Enter a city" />
+          <div class="col-md-6 col-12">
+            <input id="city-input" type="text" class="form-control" placeholder="Enter a city" autocomplete="off" />
           </div>
-          <div class="col-2">
+          <div class="col-md-2 col-12">
             <button type="submit" class="btn btn-primary" id="citySearch">Search</button>
           </div>
-          <div class="col-2">
+          <div class="col-md-2 col-12">
             <button type="submit" class="btn btn-success" id="cityCurrent">Current</button>
           </div>
         </div>
@@ -40,19 +40,43 @@
     <div class="current_city">
       <div class="container">
         <div class="row">
-          <h3 id="curentCity">Lisbon</h3>
+          <div class="col-sm">
+            <h2 id="curentCity"></h2>
+            <h4 id="curentDate"></h4>
+          </div>
+
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <h3 id="curentDate">Saturday 21:46</h3>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="weather-temperature">
+              <h6><img src="" alt="Clear" id="icon" width="70" /><span id="icon"></span> <span id="description"></span>
+                <span id="temperature"></span><span>
+                  <a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">F</a>
+                </span>
+
+              </h6>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <ul>
+              <li>
+                <h6>
+                  Humidity: <span id="humidity">67</span>%
+                </h6>
+              </li>
+              <li>
+                <h6>
+                  Wind: <span id="wind">6.17</span> km/h
+                </h6>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <h3>Clouds ☁ <span id="temperature">17</span>°C </h3>
-        </div>
-      </div>
+
     </div>
 
     <div class="container">
@@ -104,6 +128,15 @@
         </div>
       </div>
     </div>
+  </div>
+  <br />
+  <br />
+  <div class="footer">
+    <p>
+      This project was coded by Tania Deiak and is open-sourced on <a href="https://github.com/tania-dejak/weather"
+        target="_blank">GitHub</a> and hosted on
+      <a href="https://elegant-clafoutis-46d04c.netlify.app/" target="_blank">Netlify</a>
+    <p>
   </div>
   <script src="src/index.js"></script>
 </body>
