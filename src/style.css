@@ -3,8 +3,17 @@ body {
   width: 80%;
   margin: 30px 50px;
 }
-.weather_forecast {
-  background: #ccc;
+.weather-forecast {
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  opacity: 0.99;
+  border-radius: 5px;
+  border: 1px solid #767676;
+  padding: 30px;
 }
 ul {
   padding-inline-start: 0px;
@@ -15,27 +24,7 @@ ul li {
 #description {
   text-transform: capitalize;
 }
-.weather_forecast {
-  position: relative;
-  opacity: 0.99;
-  border-radius: 5px;
-  border: 1px solid #767676;
-  padding: 30px;
-}
 
-/* .weather_forecast::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: url("../images/lisbon.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-} */
 .form-control {
   border: none;
 }
@@ -70,4 +59,19 @@ button {
 }
 .footer a {
   font-size: 1rem;
+}
+.weather-forecast-future {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+
+  opacity: 0.6;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.6;
 }
